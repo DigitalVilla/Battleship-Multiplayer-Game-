@@ -1,0 +1,332 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+	-fx-background-color: #0a0b0c;
+	   -fx-font-family: "Helvetica";
+
+}
+
+		/*/////////////////// HOME BACKGROUND  ///////////////////////////*/
+.pane {
+/*
+ * 
+  */
+  	-fx-background-image: url("../res/images/BG_login1.jpg");
+    -fx-background-repeat: stretch   ; 
+    -fx-background-size: stretch ;  
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+    /*-fx-background-size: 1980;*/ 
+}
+
+
+
+ /*///////////////////  APP SETTTINGS Window*/ 
+
+.text-field {
+    -fx-background-insets: 0, 0 0 0 0 ;
+    -fx-background-color: #777777;
+    -fx-background-radius:10 ;
+    -fx-pref-height: 50;
+    -fx-pref-width: 250;   
+    -fx-prompt-text-fill: white;
+    -fx-font-size:16px;
+}
+
+.text-field:focused {
+    -fx-background-color: #999999;
+}
+
+.lbl {
+	-fx-font-size: 14px;
+}
+
+.btn {
+    -fx-background-color:      #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.5), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5; -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial"; -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 30 10 30;
+    -fx-pref-width: 200;
+    -fx-background-radius: 50;
+}
+
+.btn:pressed {
+	 -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0) , 0, 0.0 , 0 , 0 );
+}
+
+img {
+	-fx-pref-height: 10;
+}
+
+.reset_btn {
+	-fx-background-color: transparent ;
+	-fx-text-fill: #7e7e7e;
+}
+
+#window {
+	  -fx-background-color: 
+        linear-gradient(#f2f2f2, #d6d6d6),
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 20;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.8) , 4, 0.5 , 0.5 , 1 );
+    -fx-padding:10;
+}
+
+
+
+
+/*/////////////////// GAMEBOARD  ///////////////////////////*/
+#map,#radar {
+/*
+	-fx-background-image: url("./../../res/images/map.png");
+	-fx-background-position: center; 
+	-fx-background-size: cover;
+*/
+     -fx-background-color: 
+        #8695a9,
+        linear-gradient(#303842 0%, #3e4567 20%, #374064 100%),
+        linear-gradient(#5668a5 0%, #647c9b 5%, #385782 50%, #284a7a 51%, #2a4c7b 100%);
+  -fx-background-radius: 35;
+    -fx-text-fill: #242d35;
+ -fx-padding: 12px;
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.8) , 4, 0.5 , 0.5 , 1 );
+}
+
+
+#radar {
+	-fx-background-image: url("../res/images/radar.png");
+	-fx-background-position: center; 
+	-fx-background-size: contain  ;
+	
+}
+#map {
+	-fx-background-image: url("../res/images/map.png");
+	-fx-background-position: center; 
+	-fx-background-size: contain  ;
+}
+
+
+
+.gridLines {
+	-fx-fill: #00000011;
+	-fx-stroke-borders: #dddddd;
+	-fx-stroke-width: 1;
+		-fx-opacity: .9;
+}
+	
+
+#gameBoard {
+-fx-background-image: url("../res/images/BS-1360x768.jpg");
+	-fx-background-color: #dddddd;
+	-fx-background-position: center; 
+	-fx-background-size: cover;
+}
+
+
+#shipBox, #menu,.menu_btns {
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.8) , 4, 0.0 , 0 , 1 );
+    	    -fx-background-color:      #040607,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.5), rgba(255,255,255,0));
+    -fx-text-fill: white;
+    -fx-font-family: "Courier New"; -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 16px;
+    
+}
+
+.menu_btns:pressed {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0) , 0, 0 , 0 , 0 );
+   	-fx-background-color:      #040607,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.5), rgba(255,255,255,0));
+}
+
+
+.menu_btns:hover { 
+
+
+}
+
+
+.boardGrid {
+	 -fx-border-radius: 20;
+}
+
+
+#destroyer {
+	-fx-scale-shape: 2;
+}
+
+
+
+/* /////// MENU BUTTONS */
+.util_btns {
+	-fx-background-color: none ;
+}
+.menu_btns{
+    -fx-min-width: 80;
+}
+
+#menu {
+	
+}
+
+
+/* ///// CHAT */
+#chatApp {
+	-fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+    	    -fx-background-color:      #040607,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.5), rgba(255,255,255,0));
+    -fx-text-fill: white;
+    -fx-font-family: "Courier New"; -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 16px;
+}
+
+#chatText {
+	-fx-background-color: #222222;
+	-fx-text-fill: #00bb00;
+	-fx-font-family: "Courier New";
+	-fx-font-size: 14px;
+	-fx-font-weight: 900;
+	-fx-padding: 10;
+	  
+}
+#chatDisplay {
+	-fx-background-color: transparent ;
+	  -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+}
+
+
+#chatBtn {
+	    -fx-background-color:      #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.5), rgba(255,255,255,0));
+    -fx-text-fill: white;
+    -fx-font-family: "Courier New";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 16px;
+    -fx-font-weight: 900;
+}
+
+#chatBtn:pressed {
+    -fx-background-color:      #091a2c,
+    linear-gradient(#48525b 0%, #2f3439 20%, #292d32 100%),
+    linear-gradient(#30363b, #292d32),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.5), rgba(255,255,255,0));
+}
+
+#chatTxtF {
+	 -fx-background-color:      #090a0c55,
+    linear-gradient(#68727b 0%, #4f5459 20%, #494d52 100%),
+    linear-gradient(#50565b, #494d52),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.5), rgba(255,255,255,0));
+     -fx-text-fill: #00ff00;
+     -fx-font-family: "Courier New";
+     	       -fx-font-weight: 900;
+}
+ 
+
+/****************************************************************
+ 
+  ScrollBar Skin  
+ 
+****************************************************************/
+.scroll-bar{
+ -fx-background-color: rgb(96,96,96);
+ -fx-background-radius: 2em;
+ -fx-opacity: .7;
+}
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+ -fx-background-color: transparent;
+ -fx-border-color:transparent;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal .track-background {
+ -fx-background-color: transparent;
+ -fx-background-insets: 0;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb {
+ -fx-background-color: rgb(211,211,211);
+ -fx-background-insets: 4 0 4 0;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .thumb {
+ -fx-background-color: rgb(211,211,211);
+ -fx-background-insets: 0 4 0 4;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+ -fx-background-color: rgb(231,231,231);
+}
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed {
+ -fx-background-color: rgb(255,255,255);
+}
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 2em;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 2em;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-arrow {
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-background-color: rgb(211,211,211);
+ -fx-padding: 0.25em;
+ -fx-rotate: -90;
+}
+.scroll-bar:vertical .increment-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 0;
+}
+.scroll-bar:horizontal .decrement-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 90;
+}
+.scroll-bar:vertical .decrement-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: -180;
+}
+.scroll-bar:vertical:focused,
+.scroll-bar:horizontal:focused {
+ -fx-background-color: transparent,rgb(96,96,96),rgb(96,96,96);
+}
