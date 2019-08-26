@@ -17,11 +17,3 @@ A Multiplayer Battleship game made in pure Java. with a fully functional UI made
 ```sh
 this game is still in beta
 ```
-
-### Future implementations
-* **Fix bug when players try to reconnect to a different player**
-* **limit the chat input to 100 characters**
-* **Create jar files for both server and player**
-* **Refractor code and allow for more flexibility**
-* **Organize program in an MVC model**
-
